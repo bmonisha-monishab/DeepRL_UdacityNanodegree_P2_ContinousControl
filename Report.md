@@ -109,6 +109,20 @@ Training of the agent was performed on the Continuous_Control_Solution.ipynb not
  - They will initialize the environment and train until it reaches the goal condition of +30
  - The agent is trained until it solves the environment, that is to say an average reward of at least +30 for the last 100 episodes.
  - A graph of the scores during training will be displayed after training.
+ 
+## Hyperparameters 
+
+The following set of hyperparameters were used.
+
+Maximum number of Timesteps per episode = 1000
+Replay buffer size = 1e6
+Minibatch size = 1024
+Discount factor (Gamma) = 0.99
+Tau (for soft update of target parameters) = 1e-3
+Learning rate of the actor = 1e-4 
+Learning rate of the critic = 3e-4
+L2 weight decay = 0.0001
+
 
 ## Results
 
